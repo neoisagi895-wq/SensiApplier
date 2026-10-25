@@ -1,0 +1,417 @@
+Windows Registry Editor Version 5.00
+
+; ====================================================================
+; GOD / UPPER TIER - ULTRA AIMLOCK SENSI (5KB EXPANDED MASTER)
+; Calibrated with Raw Accel Classic Curve for Free Fire Emulators
+; ====================================================================
+
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"ActiveWindowTracking"=dword:00000000
+"Beep"="No"
+"DoubleClickHeight"="4"
+"DoubleClickSpeed"="550"
+"DoubleClickWidth"="4"
+"ExtendedSounds"="No"
+"MouseHoverHeight"="4"
+"MouseHoverWidth"="4"
+"MouseHoverTime"=dword:00000000
+"MouseSensitivity"="6"
+"MouseSpeed"="1"
+"MouseThreshold1"="6"
+"MouseThreshold2"="10"
+"MouseTrails"="0"
+"SnapToDefaultButton"="0"
+"SwapMouseButtons"="0"
+"SmoothMouseXCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,10,00,00,00,00,00,\
+  00,00,20,00,00,00,00,00,\
+  00,00,40,00,00,00,00,00
+"SmoothMouseYCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,11,00,00,00,00,00,\
+  00,00,24,00,00,00,00,00,\
+  00,00,4B,00,00,00,00,00
+
+[HKEY_USERS\.DEFAULT\Control Panel\Mouse]
+"ActiveWindowTracking"=dword:00000000
+"Beep"="No"
+"DoubleClickHeight"="4"
+"DoubleClickSpeed"="550"
+"DoubleClickWidth"="4"
+"ExtendedSounds"="No"
+"MouseHoverHeight"="4"
+"MouseHoverWidth"="4"
+"MouseHoverTime"=dword:00000000
+"MouseSensitivity"="6"
+"MouseSpeed"="1"
+"MouseThreshold1"="6"
+"MouseThreshold2"="10"
+"MouseTrails"="0"
+"SnapToDefaultButton"="0"
+"SwapMouseButtons"="0"
+"SmoothMouseXCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,10,00,00,00,00,00,\
+  00,00,20,00,00,00,00,00,\
+  00,00,40,00,00,00,00,00
+"SmoothMouseYCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,11,00,00,00,00,00,\
+  00,00,24,00,00,00,00,00,\
+  00,00,4B,00,00,00,00,00
+
+; --- INPUT DRIVER DATA QUEUE BUFFERS & WPP TRACING DISABLE ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters]
+"MouseDataQueueSize"=dword:00000014
+"WppRecorderSize"=dword:00000000
+"MouseConnectMultiplePorts"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters]
+"KeyboardDataQueueSize"=dword:00000014
+"WppRecorderSize"=dword:00000000
+"KeyboardDataQueueSizeMax"=dword:00000014
+
+; --- USB CONTROLLER POWER & POLLING RATE OPTIMIZATIONS ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USB]
+"DisableSelectiveSuspend"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBHUB3\Parameters]
+"DisableSelectiveSuspend"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\4838e605-092e-4497-bc72-0177d8637784]
+"Attributes"=dword:00000002
+
+; --- SYSTEM RESPONSIVENESS & MULTIMEDIA SCHEDULER TUNING ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"SystemResponsiveness"=dword:00000000
+"NetworkThrottlingIndex"=dword:ffffffff
+"NoLazyMode"=dword:00000001
+"AlwaysOn"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"Affinity"=dword:00000000
+"Background Only"="No"
+"Clock Rate"=dword:00002710
+"GPU Priority"=dword:00000008
+"Priority"=dword:00000008
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+
+; --- WIN32 PRIORITY SEPARATION (FOREGROUND PERFORMANCE BOOST) ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000026
+"IRQ8Priority"=dword:00000001
+"IRQ0Priority"=dword:00000000
+
+; --- DISABLE CPU & HARDWARE POWER THROTTLING ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"EnergyEstimationEnabled"=dword:00000000
+
+; --- BLUESTACKS / EMULATOR AUTOMATED HIGH PRIORITY HOOK ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\HD-Player.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000003
+"IoPriority"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Ld9BoxHeadless.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000003
+"IoPriority"=dword:00000003
+
+; --- DIRECTX & DISPLAY DRIVER ZERO-LATENCY FLAGS ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectX]
+"MaxFrameQueueSize"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR]
+"value"=dword:00000000
+```[cite: 6]
+
+---
+
+### 2. Trickshot / RedOnly 99.9% Master (`Trickshot_99.9_RawAccel_Calibrated.reg`)
+* **Purpose:** High-velocity multiplier (`MouseSensitivity="10"`) packed into the full 5KB master framework for maximum flick velocity and zero-latency emulator prioritization[cite: 7].
+
+```reg
+Windows Registry Editor Version 5.00
+
+; ====================================================================
+; GOD / UPPER TIER - ULTRA TRICKSHOT SENSI (5KB EXPANDED MASTER)
+; Calibrated with Raw Accel Classic Curve for Free Fire Emulators
+; ====================================================================
+
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"ActiveWindowTracking"=dword:00000000
+"Beep"="No"
+"DoubleClickHeight"="4"
+"DoubleClickSpeed"="550"
+"DoubleClickWidth"="4"
+"ExtendedSounds"="No"
+"MouseHoverHeight"="4"
+"MouseHoverWidth"="4"
+"MouseHoverTime"=dword:00000000
+"MouseSensitivity"="10"
+"MouseSpeed"="1"
+"MouseThreshold1"="6"
+"MouseThreshold2"="10"
+"MouseTrails"="0"
+"SnapToDefaultButton"="0"
+"SwapMouseButtons"="0"
+"SmoothMouseXCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,10,00,00,00,00,00,\
+  00,00,20,00,00,00,00,00,\
+  00,00,40,00,00,00,00,00
+"SmoothMouseYCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,11,00,00,00,00,00,\
+  00,00,24,00,00,00,00,00,\
+  00,00,4B,00,00,00,00,00
+
+[HKEY_USERS\.DEFAULT\Control Panel\Mouse]
+"ActiveWindowTracking"=dword:00000000
+"Beep"="No"
+"DoubleClickHeight"="4"
+"DoubleClickSpeed"="550"
+"DoubleClickWidth"="4"
+"ExtendedSounds"="No"
+"MouseHoverHeight"="4"
+"MouseHoverWidth"="4"
+"MouseHoverTime"=dword:00000000
+"MouseSensitivity"="10"
+"MouseSpeed"="1"
+"MouseThreshold1"="6"
+"MouseThreshold2"="10"
+"MouseTrails"="0"
+"SnapToDefaultButton"="0"
+"SwapMouseButtons"="0"
+"SmoothMouseXCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,10,00,00,00,00,00,\
+  00,00,20,00,00,00,00,00,\
+  00,00,40,00,00,00,00,00
+"SmoothMouseYCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,11,00,00,00,00,00,\
+  00,00,24,00,00,00,00,00,\
+  00,00,4B,00,00,00,00,00
+
+; --- HIGH-VELOCITY DRIVER QUEUES & STABILITY FIXES ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters]
+"MouseDataQueueSize"=dword:00000014
+"WppRecorderSize"=dword:00000000
+"MouseConnectMultiplePorts"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters]
+"KeyboardDataQueueSize"=dword:00000014
+"WppRecorderSize"=dword:00000000
+"KeyboardDataQueueSizeMax"=dword:00000014
+
+; --- USB CONTROLLER POWER & POLLING RATE OPTIMIZATIONS ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USB]
+"DisableSelectiveSuspend"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBHUB3\Parameters]
+"DisableSelectiveSuspend"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\4838e605-092e-4497-bc72-0177d8637784]
+"Attributes"=dword:00000002
+
+; --- SYSTEM RESPONSIVENESS & MULTIMEDIA SCHEDULER TUNING ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"SystemResponsiveness"=dword:00000000
+"NetworkThrottlingIndex"=dword:ffffffff
+"NoLazyMode"=dword:00000001
+"AlwaysOn"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"Affinity"=dword:00000000
+"Background Only"="No"
+"Clock Rate"=dword:00002710
+"GPU Priority"=dword:00000008
+"Priority"=dword:00000008
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+
+; --- WIN32 PRIORITY SEPARATION (FOREGROUND PERFORMANCE BOOST) ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000026
+"IRQ8Priority"=dword:00000001
+"IRQ0Priority"=dword:00000000
+
+; --- DISABLE CPU & HARDWARE POWER THROTTLING ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"EnergyEstimationEnabled"=dword:00000000
+
+; --- BLUESTACKS / EMULATOR AUTOMATED HIGH PRIORITY HOOK ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\HD-Player.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000003
+"IoPriority"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Ld9BoxHeadless.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000003
+"IoPriority"=dword:00000003
+
+; --- DIRECTX & DISPLAY DRIVER ZERO-LATENCY FLAGS ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectX]
+"MaxFrameQueueSize"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR]
+"value"=dword:00000000
+```[cite: 7]
+
+---
+
+### 3. Accuracy 99.9% Master (`Accuracy_99.9_RawAccel_Calibrated.reg`)
+* **Purpose:** Precision low-sensitivity setting (`MouseSensitivity="4"`) tied with tighter input buffer boundaries (`0x0000000E`) and full kernel optimizations for pinpoint micro-adjustments[cite: 8].
+
+```reg
+Windows Registry Editor Version 5.00
+
+; ====================================================================
+; GOD / UPPER TIER - ULTRA ACCURACY SENSI (5KB EXPANDED MASTER)
+; Calibrated with Raw Accel Classic Curve for Free Fire Emulators
+; ====================================================================
+
+[HKEY_CURRENT_USER\Control Panel\Mouse]
+"ActiveWindowTracking"=dword:00000000
+"Beep"="No"
+"DoubleClickHeight"="4"
+"DoubleClickSpeed"="550"
+"DoubleClickWidth"="4"
+"ExtendedSounds"="No"
+"MouseHoverHeight"="4"
+"MouseHoverWidth"="4"
+"MouseHoverTime"=dword:00000000
+"MouseSensitivity"="4"
+"MouseSpeed"="1"
+"MouseThreshold1"="6"
+"MouseThreshold2"="10"
+"MouseTrails"="0"
+"SnapToDefaultButton"="0"
+"SwapMouseButtons"="0"
+"SmoothMouseXCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,10,00,00,00,00,00,\
+  00,00,20,00,00,00,00,00,\
+  00,00,40,00,00,00,00,00
+"SmoothMouseYCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,11,00,00,00,00,00,\
+  00,00,24,00,00,00,00,00,\
+  00,00,4B,00,00,00,00,00
+
+[HKEY_USERS\.DEFAULT\Control Panel\Mouse]
+"ActiveWindowTracking"=dword:00000000
+"Beep"="No"
+"DoubleClickHeight"="4"
+"DoubleClickSpeed"="550"
+"DoubleClickWidth"="4"
+"ExtendedSounds"="No"
+"MouseHoverHeight"="4"
+"MouseHoverWidth"="4"
+"MouseHoverTime"=dword:00000000
+"MouseSensitivity"="4"
+"MouseSpeed"="1"
+"MouseThreshold1"="6"
+"MouseThreshold2"="10"
+"MouseTrails"="0"
+"SnapToDefaultButton"="0"
+"SwapMouseButtons"="0"
+"SmoothMouseXCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,10,00,00,00,00,00,\
+  00,00,20,00,00,00,00,00,\
+  00,00,40,00,00,00,00,00
+"SmoothMouseYCurve"=hex:\
+  00,00,00,00,00,00,00,00,\
+  00,00,04,00,00,00,00,00,\
+  00,00,11,00,00,00,00,00,\
+  00,00,24,00,00,00,00,00,\
+  00,00,4B,00,00,00,00,00
+
+; --- HIGH-PRECISION DRIVER QUEUES & STABILITY FIXES ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mouclass\Parameters]
+"MouseDataQueueSize"=dword:0000000E
+"WppRecorderSize"=dword:00000000
+"MouseConnectMultiplePorts"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\kbdclass\Parameters]
+"KeyboardDataQueueSize"=dword:0000000E
+"WppRecorderSize"=dword:00000000
+"KeyboardDataQueueSizeMax"=dword:0000000E
+
+; --- USB CONTROLLER POWER & POLLING RATE OPTIMIZATIONS ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USB]
+"DisableSelectiveSuspend"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\USBHUB3\Parameters]
+"DisableSelectiveSuspend"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\2a737441-1930-4402-8d77-b2bebba308a3\4838e605-092e-4497-bc72-0177d8637784]
+"Attributes"=dword:00000002
+
+; --- SYSTEM RESPONSIVENESS & MULTIMEDIA SCHEDULER TUNING ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"SystemResponsiveness"=dword:00000000
+"NetworkThrottlingIndex"=dword:ffffffff
+"NoLazyMode"=dword:00000001
+"AlwaysOn"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games]
+"Affinity"=dword:00000000
+"Background Only"="No"
+"Clock Rate"=dword:00002710
+"GPU Priority"=dword:00000008
+"Priority"=dword:00000008
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+
+; --- WIN32 PRIORITY SEPARATION (FOREGROUND PERFORMANCE BOOST) ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\PriorityControl]
+"Win32PrioritySeparation"=dword:00000026
+"IRQ8Priority"=dword:00000001
+"IRQ0Priority"=dword:00000000
+
+; --- DISABLE CPU & HARDWARE POWER THROTTLING ---
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling]
+"PowerThrottlingOff"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"EnergyEstimationEnabled"=dword:00000000
+
+; --- BLUESTACKS / EMULATOR AUTOMATED HIGH PRIORITY HOOK ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\HD-Player.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000003
+"IoPriority"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\Ld9BoxHeadless.exe\PerfOptions]
+"CpuPriorityClass"=dword:00000003
+"IoPriority"=dword:00000003
+
+; --- DIRECTX & DISPLAY DRIVER ZERO-LATENCY FLAGS ---
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DirectX]
+"MaxFrameQueueSize"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\ApplicationManagement\AllowGameDVR]
+"value"=dword:00000000
+```[cite: 8]
+
+---
+
+<FollowUp question="Have you had a chance to test these expanded 5KB master registry templates inside your Free Fire emulator?"/>
